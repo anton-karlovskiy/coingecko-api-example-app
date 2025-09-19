@@ -1,25 +1,62 @@
-# Cryptocurrency exchanges from Coingecko API
+# 📊 Cryptocurrency Exchanges Directory (Coingecko API)  
 
-## Specs
-Using the Coingecko public API (https://www.coingecko.com/en/api), build an application that will serve as a directory of cryptocurrency exchanges. The main page should be a list with the first ten exchanges with some high-level information (name, country, URL, logo, trust rank).
+A simple **Next.js + TypeScript** web application that consumes the **[Coingecko public API](https://www.coingecko.com/en/api)** to display a directory of cryptocurrency exchanges.  
+Users can browse high-level exchange information and view detailed pages for each exchange.  
 
-When the user clicks on an exchange, show its details on a separate page. Included in those details should be the name, country, trust rank, logo, year of establishment, social media links, description, and a back-to-main-page button.
+## 🚀 Features  
 
-## Tech stack
+- Fetches data from the **Coingecko API**  
+- Displays the **top 10 cryptocurrency exchanges** with key details:  
+  * Name  
+  * Country  
+  * Website URL  
+  * Logo  
+  * Trust rank  
+- Dedicated **exchange detail page** with:  
+  * Name, country, trust rank, logo  
+  * Year of establishment  
+  * Social media links  
+  * Description  
+  * Back-to-main-page navigation  
 
-- create-next-app
-- TypeScript
-- ESLint (`eslint-config-google`)
-- `husky` & `lint-staged`
-- `tailwindcss`
+## 🛠️ Tech Stack  
 
-## Getting the project up and running
+- [Next.js](https://nextjs.org/) (via `create-next-app`)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [TailwindCSS](https://tailwindcss.com/) for styling  
+- ESLint (`eslint-config-google`) for code linting  
+- `husky` & `lint-staged` for pre-commit checks  
 
+## ⚙️ Getting Started  
+
+Install dependencies:  
 ```bash
 yarn install
-# development
+```
+
+Run the project in development mode:
+```bash
 yarn dev
-# production
+```
+
+Build for production:
+```bash
 yarn build
 yarn start
 ```
+
+## 🎯 Purpose
+
+This project demonstrates how to:
+
+- Integrate with a public crypto API (Coingecko)
+
+- Build a modern Next.js frontend with TypeScript and TailwindCSS
+
+- Follow best practices for code quality (linting, pre-commit hooks)
+
+- Deliver a clean, responsive UI for cryptocurrency-related apps
+
+## 📄 License
+
+MIT — free to use and modify.
